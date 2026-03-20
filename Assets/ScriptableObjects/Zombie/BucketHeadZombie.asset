@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f93670350b4bff4e9707291e1cd24fc, type: 3}
+  m_Name: BucketHeadZombie
+  m_EditorClassIdentifier: 
+  type: 2
+  powerValue: 4
+  baseWeight: 1000
+  prefab: {fileID: 4359377191940448949, guid: b7bd5e268d2a73e41ab220e0be60b904, type: 3}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f93670350b4bff4e9707291e1cd24fc, type: 3}
+  m_Name: RegularZombie
+  m_EditorClassIdentifier: 
+  type: 0
+  powerValue: 1
+  baseWeight: 4000
+  prefab: {fileID: 4359377191940448949, guid: 67608c97c8c50184680623a0e3f9afa7, type: 3}

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Cursor
+  - Zombie
+  - Plant
+  - Button
+  - Almanac
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Zombie
+  - Plant
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Tip
+    uniqueID: 2465758803
+    locked: 0
+  - name: Plant
+    uniqueID: 3855850221
+    locked: 0
+  - name: Zombie
+    uniqueID: 2478297287
+    locked: 0
+  - name: Prop
+    uniqueID: 4087451069
+    locked: 0
+  - name: UI
+    uniqueID: 984249605
+    locked: 0
