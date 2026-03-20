@@ -1,5 +1,3 @@
-PlantsVsZombies README.md 完整内容
-
 # 🌱 PlantsVsZombies —— 植物大战僵尸（Unity 版）
 一个基于 Unity 引擎开发的简易植物大战僵尸 Demo，实现了核心玩法的基础逻辑，适合学习与二次开发。
 
