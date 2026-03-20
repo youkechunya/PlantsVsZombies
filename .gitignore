@@ -1,0 +1,76 @@
+# ======================= #
+# Unity 生成的文件夹（绝对不要上传）
+# ======================= #
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# ======================= #
+# Unity 生成的文件
+# ======================= #
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ======================= #
+# 大文件/二进制（建议用 Git LFS）
+# ======================= #
+*.unitypackage
+*.assetbundle
+*.bundle
+
+# ======================= #
+# IDE / 编辑器
+# ======================= #
+# Visual Studio
+.vs/
+.vscode/
+*.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# ======================= #
+# 操作系统文件
+# ======================= #
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ======================= #
+# 其他
+# ======================= #
+# 崩溃报告
+sysinfo.txt
+# 崩溃转储
+*.stackdump
+# 包管理器缓存
+[Pp]ackages/**/package.json.meta
