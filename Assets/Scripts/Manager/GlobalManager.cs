@@ -23,7 +23,6 @@ public class GlobalManager : MonoBehaviour
 
         InTheGame = false;
         gameInput = new Game();
-        mainCamera = Camera.main;
     }
 
     Game gameInput;
@@ -46,8 +45,6 @@ public class GlobalManager : MonoBehaviour
         }
     }
 
-    public Camera mainCamera;
-
     public UIManager ui;
 
     private void OnEnable()
@@ -62,9 +59,7 @@ public class GlobalManager : MonoBehaviour
 
     private void Update()
     {
-        Vector3 position = mainCamera.transform.position;
-        position.z = 0;
-        transform.position = position;
+        transform.position = Camera.main.transform.position;
     }
 
     void OpenOptionMenu(InputAction.CallbackContext ctx)

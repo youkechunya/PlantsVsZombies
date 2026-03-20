@@ -41,9 +41,7 @@ public class StartButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         selectedBoard.DOAnchorPos(new Vector2(-304, -1130), 0.3f);
         yield return new WaitForSeconds(0.5f);
         // 移动相机
-        yield return GlobalManager.Instance.mainCamera.transform.DOMoveX(0, 1f)
-            .SetEase(Ease.InQuad)
-            .WaitForCompletion();
+        CameraEvents.OnReturnToOriginPosition?.Invoke();
         yield return new WaitForSeconds(1.5f);
         // 生成小推车
         float y = 1.6f;

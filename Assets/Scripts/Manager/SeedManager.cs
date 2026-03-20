@@ -47,7 +47,7 @@ public class SeedManager : MonoBehaviour
 
     private void Start()
     {
-        GetComponent<Canvas>().worldCamera = GlobalManager.Instance.mainCamera;
+        GetComponent<Canvas>().worldCamera = Camera.main;
         EventTrigger.Entry entry = new()
         {
             eventID = EventTriggerType.PointerClick

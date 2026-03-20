@@ -1,7 +1,5 @@
 using DG.Tweening;
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -111,14 +109,8 @@ public class LevelManager : MonoBehaviour
     private OptionMenu optionMenu;
     private Coroutine selectedSeedCoroutine;
 
-    /// <summary>
-    /// 选卡时的画面移动
-    /// </summary>
-    Tween startMoveTween;
-
     private void OnEnable()
     {
-        GameEvents.OnReturnToMenu += ReturnToMenu;
         optionMenu = GlobalManager.Instance.ui.GetOptionMenu();
     }
 
@@ -158,20 +150,13 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    private void OnDisable()
-    {
-        GameEvents.OnReturnToMenu -= ReturnToMenu;
-    }
-
     IEnumerator SelectedSeed()
     {
         // 不可视铲子槽
         shovelBank.SetActive(false);
         yield return new WaitForSeconds(0.75f);
         // 移动相机
-        startMoveTween = GlobalManager.Instance.mainCamera.transform.DOMoveX(4, 1.5f)
-            .SetEase(Ease.InQuad);
-        yield return startMoveTween;
+        CameraEvents.OnSelectSeed?.Invoke();
         yield return new WaitForSeconds(0.5f);
         seedBank.DOAnchorPosY(-70, 0.4f);
         seedChooser.DOAnchorPosY(-70, 0.3f);
@@ -266,16 +251,8 @@ public class LevelManager : MonoBehaviour
         else
         {
             StopCoroutine(selectedSeedCoroutine);
-            GlobalManager.Instance.mainCamera.transform.position = new Vector3(0, 0, -10);
+            CameraEvents.OnResetCameraPosition?.Invoke();
             optionMenu.ReturnToMenu();
-        }
-    }
-
-    private void ReturnToMenu()
-    {
-        if (startMoveTween != null)
-        {
-            startMoveTween.Kill();
         }
     }
 }
